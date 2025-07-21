@@ -33,7 +33,7 @@ Once everything is installed, you can run the tests using the following command:
 ## Step 6: View the Results
 After running the tests, you will see the results in the terminal. If all tests pass, you will see a success message. If any tests fail, Playwright will provide detailed error messages to help you debug the issue.
 
-## Step 7: Generate Reports 
+## Step 7: Generate Report 
 Since Playwright has inbuilt report system, To generate the report you can run the following command after the tests has been completed 
 
 "npx playwright show-report"
