@@ -1,0 +1,20 @@
+[
+  {
+    "fullName": "John",
+    "email": "john842@example.com",
+    "currentAddress": "123 Main St, Kathmandu",
+    "permanentAddress": "45 Lakeside Rd, Pokhara"
+  },
+  {
+    "fullName": "Jane",
+    "email": "jane317@example.com",
+    "currentAddress": "456 Elm St, Lalitpur",
+    "permanentAddress": "78 Bhaktapur Old Town"
+  },
+  {
+    "fullName": "Kane",
+    "email": "kane659@example.com",
+    "currentAddress": "590 Pokhara Rd, Pokhara",
+    "permanentAddress": "590 Pokhara Rd, Pokhara"
+  }
+]
