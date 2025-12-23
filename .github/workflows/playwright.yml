@@ -48,8 +48,8 @@ jobs:
     - name: Publish Allure report to GitHub Pages
       if: ${{ !cancelled() }}
       uses: peaceiris/actions-gh-pages@v4
-    with:
-    github_token: ${{ secrets.GITHUB_TOKEN }}
-    publish_branch: gh-pages
-    publish_dir: allure-report
-    keep_files: true
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: allure-report
+        keep_files: true
