@@ -38,7 +38,7 @@ const currentAddress = "Gwarko ko flyover";
 test('Filling up the practice form', async({ element, practiceform, radiobutton, date, checkbox, uploadfile, dropdown })=>{
   await practiceform.navigate();
   await element.textPracticeForm(firstName, lastName, email, mobileNumber, subjects, currentAddress);
-  await radiobutton.radioPracticeForm();
+  await radiobutton.radioPracticeForms();
   await date.datePracticeForm();
   await checkbox.checkboxPracticeForm();
   await uploadfile.imageUploadPracticeForm();
