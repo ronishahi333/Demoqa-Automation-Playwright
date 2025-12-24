@@ -39,7 +39,7 @@ jobs:
     
     - name: Run Playwright tests
       id: tests
-      run: npx playwright test practiceform.spec.ts --project='chromium'
+      run: npx playwright test radiobutton.spec.ts --project='chromium'
       continue-on-error: true
 
     - name: Generate Allure report
