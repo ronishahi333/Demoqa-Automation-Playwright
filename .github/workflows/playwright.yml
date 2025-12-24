@@ -45,3 +45,7 @@ jobs:
         publish_branch: allure-report
         publish_dir: allure-report
         keep_files: true
+
+    - name: Fail job if tests failed
+      if: steps.tests.outcome == 'failure'
+      run: exit 1
