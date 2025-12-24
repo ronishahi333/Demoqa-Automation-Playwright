@@ -6,7 +6,7 @@
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "trace": "npx playwright show-trace test-results/textbox-Interacting-with-Text-Box-chromium/trace.zip",
     "allure": "mkdir -p allure-results/history && cp -r allure-report/history allure-results && allure generate allure-results --clean -o allure-report && allure open allure-report",
-    "allure-CI": "npx allure-commandline generate allure-results --clean -o allure-report",
+    "allure-CI": "if [ -d 'allure-report-branch/history' ]; then mkdir -p allure-results/history && cp -r allure-report-branch/history/* allure-results/history/; fi",
     "allure-clean": "rm -rf allure-results/*"
   },
   "keywords": [],
