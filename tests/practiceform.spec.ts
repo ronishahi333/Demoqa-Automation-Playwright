@@ -40,7 +40,7 @@ test('Filling up the practice form', async({ element, practiceform, radiobutton,
   await element.textPracticeForm(firstName, lastName, email, mobileNumber, subjects, currentAddress);
   await radiobutton.radioPracticeForm();
   await date.datePracticeForm();
-  await checkbox.checkboxPracticeForms();
+  await checkbox.checkboxPracticeForm();
   await uploadfile.imageUploadPracticeForm();
   await dropdown.dropdownPracticeForm();
 });
