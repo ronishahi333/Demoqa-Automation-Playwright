@@ -41,6 +41,6 @@ test('Filling up the practice form', async({ element, practiceform, radiobutton,
   await radiobutton.radioPracticeForm();
   await date.datePracticeForm();
   await checkbox.checkboxPracticeForm();
-  await uploadfile.imageUploadPracticeForms();
+  await uploadfile.imageUploadPracticeForm();
   await dropdown.dropdownPracticeForm();
 });
