@@ -48,7 +48,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: allure-report
         publish_dir: allure-report
-        keep_files: false
+        keep_files: true
 
     - name: Fail job if tests failed
       if: steps.tests.outcome == 'failure'
