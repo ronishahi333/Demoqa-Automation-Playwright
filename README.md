@@ -52,6 +52,6 @@ Allure is third party report generation tool. To see the results in graph or mor
 
 "npm run allure"
 
-- Cleaning the allure-results folder is required, if you don't want the older tests report to generate
+- Cleaning the allure-results folder is required, if you don't want the older tests report to generatess
 
 "npm run allure-clean"
