@@ -1,5 +1,5 @@
-# Denzing Automation
-This repository contains automated tests for the Denzing using Playwright and Typescript
+# Demoqa Automation
+This repository contains end-to-end automation test scripts developed using Playwright for https://demoqa.com. It is designed to validate application functionality, improve test coverage, and support regression testing across different browsers.
 
 ## Getting Started
 
@@ -8,49 +8,58 @@ This repository contains automated tests for the Denzing using Playwright and Ty
 - Node.js (version 14 or higher)  
 - npm or yarn package manager
 
-### Step 1: Clone the Repository  
-Open a terminal or command prompt and run the following command to clone the project repository to your local machine:
+## Clone Repository
 
-## Step 2: Install Project Dependencies
-Run the following command to install the required dependencies for the project, including Playwright and any other necessary libraries:
+Clone the repository to your local machine and navigate to the project directory.
 
-"npm install"
+```bash
+git clone <repository-url>
+cd <repository-name>
+```
 
-## Step 3: Install Playwright Browsers
-After the dependencies are installed, you'll need to install the necessary browsers (Chromium, Firefox, WebKit) for Playwright:
+## Install Dependencies
 
-"npx playwright install"
+Install all required project dependencies defined in the `package.json` file.
 
-## Step 4: Install Additional Dependencies (For Mac and Linux Users only)
+```bash
+npm install
+```
 
-"npx playwright install-deps" 
+## Install Playwright Browsers
 
-## Step 5: Run the Tests
-Once everything is installed, you can run the tests using the following command:
+Download and install the browser binaries required by Playwright to execute tests.
 
-"npx playwright test"
+```bash
+npx playwright install
+```
 
-## Step 6: View the Result
-After running the tests, you will see the results in the terminal. If all tests pass, you will see a success message. If any tests fail, Playwright will provide detailed error messages to help you debug the issue.
+## Run Tests
 
-## Step 7: Generate Reports 
-Since Playwright has inbuilt report system, To generate the report you can run the following command after the tests has been completed 
+Execute all automated test cases available in the project.
 
-"npx playwright show-report"
+```bash
+npx playwright test
+```
 
-## Step 8: Generate Allure Reports 
+Run a specific test file:
 
-Allure is third party report generation tool. To see the results in graph or more html rich format please configure the Allure and follow the install process below 
+```bash
+npx playwright test <test-file-name>
+```
 
- - Install the Allure command Line globally
+Run tests in headed mode:
 
-"npm install -g allure-commandline"
+```bash
+npx playwright test --headed
+```
 
-- Before running the Allure results, "Java" version 8 or higher should be installed in your local system
+## View Test Report
 
-- Once the installation is done, run the test and use the following command
+Open the Playwright HTML report to review test execution results, screenshots, traces, and logs.
 
-"npm run allure"
+```bash
+npx playwright show-report
+```
 
 - Cleaning the allure-results folder is required, if you don't want the older tests report to generates
 
