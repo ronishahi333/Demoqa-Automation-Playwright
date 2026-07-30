@@ -10,7 +10,7 @@ export class Uploadfile {
   };
 
 
-  constructor(page) {
+  constructor(page: Page) {
     this.page = page;
     this.element = {
       upload: page.getByLabel('Select a file'),

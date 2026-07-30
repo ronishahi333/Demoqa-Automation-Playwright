@@ -7,7 +7,7 @@ export class Browserwindows {
         newWindowMessage: Locator
     };
 
-  constructor(page) {
+  constructor(page: Page) {
     this.page = page;
     this.element = {
       newTab: page.getByRole ('button', { name: "New Tab" }),

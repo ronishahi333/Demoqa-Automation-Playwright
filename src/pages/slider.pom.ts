@@ -7,7 +7,7 @@ export class Slider {
   };
 
 
-  constructor(page) {
+  constructor(page: Page) {
     this.page = page;
     this.element = {
       slider: page.getByRole('slider')

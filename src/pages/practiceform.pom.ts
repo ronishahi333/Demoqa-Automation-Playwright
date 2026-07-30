@@ -4,7 +4,7 @@ export class Practiceform {
   readonly page: Page;
 
 
-  constructor(page) {
+  constructor(page: Page) {
     this.page = page;
   }
 

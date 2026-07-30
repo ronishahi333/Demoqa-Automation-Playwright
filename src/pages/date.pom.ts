@@ -9,7 +9,7 @@ export class Date {
     day: Locator
   };
 
-  constructor(page) {
+  constructor(page: Page) {
     this.page = page;
     this.element = {
       calender: page.locator('#dateOfBirthInput'),

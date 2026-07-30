@@ -11,7 +11,7 @@ export class Checkbox {
     checkMusic: Locator
     };
 
-  constructor(page) {
+  constructor(page: Page) {
     this.page = page;
     this.element = {
       dropdownHome: page.getByTitle('Toggle'),

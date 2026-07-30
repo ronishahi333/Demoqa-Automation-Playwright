@@ -7,7 +7,7 @@ export class Tooltip {
   };
 
 
-  constructor(page) {
+  constructor(page: Page) {
     this.page = page;
     this.element = {
       hoverButton: page.getByRole('button', { name: "Hover me to see" })

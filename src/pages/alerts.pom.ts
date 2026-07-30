@@ -8,7 +8,7 @@ export class Alerts {
         clickmeButtonFour: Locator
     };
 
-  constructor(page) {
+  constructor(page: Page) {
     this.page = page;
     this.elements = {
       clickmeButtonOne: page.locator('#alertButton'),

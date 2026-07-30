@@ -15,7 +15,7 @@ export class Element {
       submitButton:Locator,
     };
 
-  constructor(page:Page) {
+  constructor(page: Page) {
     this.page = page;
     this.elements = {
       firstName:page.getByPlaceholder('First Name'),

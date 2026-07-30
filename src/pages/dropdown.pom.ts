@@ -11,7 +11,7 @@ export class Dropdown {
     };
 
 
-  constructor(page) {
+  constructor(page: Page) {
     this.page = page;
     this.elements = {
       dropdownArrowState: page.locator('#state'),

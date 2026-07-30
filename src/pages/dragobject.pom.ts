@@ -8,7 +8,7 @@ export class DragObject {
   };
 
 
-  constructor(page) {
+  constructor(page: Page) {
     this.page = page;
     this.element = {
       dragElement: page.locator('#draggable'),

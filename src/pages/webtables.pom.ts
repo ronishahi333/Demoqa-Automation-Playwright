@@ -14,7 +14,7 @@ export class Webtables {
   };
 
 
-  constructor(page) {
+  constructor(page: Page) {
     this.page = page;
     this.element = {
       addButton:page.getByRole('button', { name:'Add' }),

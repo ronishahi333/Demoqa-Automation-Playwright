@@ -4,7 +4,7 @@ export class Iframes {
   readonly page: Page;
 
 
-  constructor(page) {
+  constructor(page: Page) {
     this.page = page;
   }
 
