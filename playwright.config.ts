@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import reportingLabs from './reporting-labs.config';
 import dotenv from 'dotenv'
 dotenv.config();
 /**
@@ -16,17 +17,18 @@ export default defineConfig({
   testDir: './tests',
   timeout: 30000,
   /* Run tests in files in parallel */
-  fullyParallel: true,
+  fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
 
   /* Opt out of parallel tests on CI. */
-  workers: 1,
+  workers: 4,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [['html'],
     ['list'],
+    ['reporting-labs', reportingLabs],  
     ['allure-playwright',
       { outputFolder:'alllure-results',
         detail: true,
@@ -55,10 +57,10 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
     // {
     //   name: 'webkit',

@@ -6,6 +6,7 @@ import { Date } from '../src/pages/date.pom';
 import { Checkbox } from '../src/pages/checkbox.pom';
 import { Uploadfile } from '../src/pages/uploadfile.pom';
 import { Dropdown } from '../src/pages/dropdown.pom';
+import { meta } from 'reporting-labs';
 
 
 const test = base.extend <{
@@ -36,6 +37,9 @@ const subjects = "English";
 const currentAddress = "Gwarko ko flyover";
 
 test('Filling up the practice form', async({ element, practiceform, radiobutton, date, checkbox, uploadfile, dropdown })=>{
+
+  meta({priority:'High', severity:'major', feature:'form', story:'fz-490'})
+
   await practiceform.navigate();
   await element.textPracticeForm(firstName, lastName, email, mobileNumber, subjects, currentAddress);
   await radiobutton.radioPracticeForm();

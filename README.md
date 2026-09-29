@@ -1,5 +1,5 @@
 # Demoqa Automation
-This repository contains end-to-end automation test scripts developed using Playwright for https://demoqa.com. It is designed to validate application functionality, improve test coverage, and support regression testing across different browsers.
+This repository contains automated tests of demoqa using Playwright and Typescript
 
 ## Getting Started
 
@@ -8,59 +8,58 @@ This repository contains end-to-end automation test scripts developed using Play
 - Node.js (version 14 or higher)  
 - npm or yarn package manager
 
-## Clone Repository
+## Step 1: Clone the Repository  
+Open a terminal or command prompt and run the following command to clone the project repository to your local machine:
 
-Clone the repository to your local machine and navigate to the project directory.
+## Step 2: Install Project Dependencies
+Run the following command to install the required dependencies for the project, including Playwright and any other necessary libraries:
 
-```bash
-git clone <repository-url>
-cd <repository-name>
-```
+"npm install"
 
-## Install Dependencies
+## Step 3: Install Playwright Browsers
+After the dependencies are installed, you'll need to install the necessary browsers (Chromium, Firefox, WebKit) for Playwright:
 
-Install all required project dependencies defined in the `package.json` file.
+"npx playwright install"
 
-```bash
-npm install
-```
+## Step 4: Install Additional Dependencies (For Mac and Linux Users only)
 
-## Install Playwright Browsers
+"npx playwright install-deps" 
 
-Download and install the browser binaries required by Playwright to execute tests.
+## Step 5: Run the Tests
+Once everything is installed, you can run the tests using the following command:
 
-```bash
-npx playwright install
-```
+"npx playwright test"
 
-## Run Tests
+## Step 6: View the Results
+After running the tests, you will see the results in the terminal. If all tests pass, you will see a success message. If any tests fail, Playwright will provide detailed error messages to help you debug the issue.
 
-Execute all automated test cases available in the project.
+## Step 7: Generate Reports 
+Since Playwright has inbuilt report system, To generate the report you can run the following command after the tests has been completed 
 
-```bash
-npx playwright test
-```
+"npx playwright show-report"
 
-Run a specific test file:
+## Step 8: Generate Allure Reports (Optional)
 
-```bash
-npx playwright test <test-file-name>
-```
+Allure is third party report generation tool. To see the results in graph or more html rich format please configure the Allure and follow the install process below 
 
-Run tests in headed mode:
+ - Install the Allure command Line globally
 
-```bash
-npx playwright test --headed
-```
+"npm install -g allure-commandline"
 
-## View Test Report
+- Before running the Allure results, "Java" version 8 or higher should be installed in your local system
 
-Open the Playwright HTML report to review test execution results, screenshots, traces, and logs.
+- Once the installation is done, run the test and use the following command
 
-```bash
-npx playwright show-report
-```
+"npm run allure"
 
-- Cleaning the allure-results folder is required, if you don't want the older tests report to generates
+- Cleaning the allure-results folder is required, if you don't want the older tests report to generate
 
 "npm run allure-clean"
+
+## Step 9: Generate Reporting Labs Reports (Optional) 
+
+A beautiful test report in one HTML file. It tells you what broke, who owns it, and whether it is new.
+
+- Create the config file for the configuration
+
+"npx reporting-labs init"
