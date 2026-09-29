@@ -1,1 +1,1 @@
-{"uid":"b1a8273437954620fa374b796ffaacdd","name":"behaviors","children":[{"name":"Filling up the practice form","uid":"367ac62846b588a4","parentUid":"b1a8273437954620fa374b796ffaacdd","status":"passed","time":{"start":1788856766680,"stop":1788856773221,"duration":6541},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["chromium"],"tags":[]}]}
+{"uid":"b1a8273437954620fa374b796ffaacdd","name":"behaviors","children":[]}
