@@ -1,5 +1,5 @@
 # Demoqa Automation
-This repository contains automated tests of demoqa using Playwright and Typescript
+This repository contains end-to-end automation test scripts developed using Playwright for https://demoqa.com. It is designed to validate application functionality, improve test coverage, and support regression testing across different browsers.
 
 ## Getting Started
 
